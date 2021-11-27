@@ -6,14 +6,12 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/27 15:32:03 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/11/27 15:49:34 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/11/27 17:14:27 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum( int character )
+int ft_isalnum( int c )
 {
-	char c = character;
-
 	if((c >= 'a' && c <= 'z') 
 	 || (c >= 'A' && c <= 'Z') 
 	 || (c >= '0' && c <= '9'))
