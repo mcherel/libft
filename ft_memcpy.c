@@ -6,22 +6,18 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 11:37:57 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/11/28 13:18:17 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:09:17 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
-void * ft_memcpy( void * destination, const void * source, size_t size )
+void * ft_memcpy( void * dest, const void * src, size_t size )
 {
-	char *dest;
-	const char *src;
 	size_t i;
 
-	dest = (char *)destination;
-	src = (char *)source;
 	i = 0;
 	while (size > i)
 	{
-		*(dest + i) = *(src + i);
+		*((char *)dest + i) = *((char *)src + i);
 		i++;
 	}
 	return(dest);
@@ -32,7 +28,7 @@ void * ft_memcpy( void * destination, const void * source, size_t size )
 
 int main() {
 
-    int array [] = { 54, 85, 20, 63, 21 };
+    int array [] = { 57, 85, 29, 63, 21 };
     int * copy = NULL;
     int * copy1 = NULL;
     int length = sizeof( int ) * 5;
