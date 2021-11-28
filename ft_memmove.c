@@ -6,10 +6,10 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 14:16:11 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/11/28 16:42:32 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/11/28 16:55:50 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include <stddef.h>
 
 void * ft_memmove( void * dest, const void * src, size_t size )
 {
@@ -36,37 +36,10 @@ void * ft_memmove( void * dest, const void * src, size_t size )
 
 	return (dest);
 }
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 
-#define ELEMENT_COUNT 10
-
-int main() {
-/*
-    // On crée une zone de mémoire de 10 entiers et contenant
-    // que neuf valeurs. La dixième est non utilisée (0).
-    int data[] = { 20, 30, 40, 50, 60, 70, 80, 90, 100, 0 };
-
-    // On affiche le contenu de la collection
-    for( int i=0; i<ELEMENT_COUNT; i++ ) {
-        printf( "%d ", data[i] );
-    }
-    puts( "" );  // Un retour à la ligne
-
-    // On décale les éléménts dans la collection ...
-    void * source = (void *) data;
-    void * destination = (void *) ( data + 1 );
-    size_t size = ELEMENT_COUNT * sizeof( int );
-    memmove( destination, source, size );
-
-    // ... pour y insérer une nouvelle valeur en tête
-    data[0] = 10;
-
-    // On affiche le contenu de la collection
-    for( int i=0; i<ELEMENT_COUNT; i++ ) {
-        printf( "%d ", data[i] );
-    }
-    puts( "" );  // Un retour à la ligne*/
+int main(void) {
 	char a[]="ABCDEFGH";
 
   	char b[]="ABCDEFGH";
@@ -77,7 +50,7 @@ int main() {
         memmove(b+3,b,5);
 	puts(b);
 
-    return EXIT_SUCCESS;
+    return (0);
 
 
 }

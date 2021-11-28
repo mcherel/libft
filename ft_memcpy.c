@@ -6,10 +6,10 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 11:37:57 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/11/28 14:09:17 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/11/28 16:57:07 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include <stddef.h>
 void * ft_memcpy( void * dest, const void * src, size_t size )
 {
 	size_t i;
