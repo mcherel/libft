@@ -6,7 +6,7 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 12:01:23 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/11/29 13:36:48 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/11/29 14:44:59 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
@@ -37,5 +37,5 @@ int main(void)
    printf("%s\n",ptr);
    printf("%s\n",ptr1);
  
-    return 0;
+    return (0);
 }
