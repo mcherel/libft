@@ -6,7 +6,7 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 17:00:23 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/11/26 16:52:37 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/02 15:18:39 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,6 @@ int main (void)
 	printf("4 %d : %d\n", isalpha('@'), ft_isalpha('@'));
 	printf("5 %d : %d\n", isalpha('M'), ft_isalpha('M'));
 	printf("6 %d : %d\n", isalpha(24), ft_isalpha(24));
-	printf("7 %d : %d\n", isalpha(), ft_isalpha(24));
+	printf("7 %d : %d\n", isalpha('0'), ft_isalpha(24));
 	return (0);
 }

@@ -6,10 +6,11 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/27 18:35:09 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/11/27 19:11:53 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/02 15:03:07 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
+//#include <stddef.h>
 
 void * ft_memset( void * pointer, int value, size_t count )
 {
