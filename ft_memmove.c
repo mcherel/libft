@@ -6,10 +6,10 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 14:16:11 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/11/28 16:55:50 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/02 17:46:49 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
 void * ft_memmove( void * dest, const void * src, size_t size )
 {
@@ -35,22 +35,4 @@ void * ft_memmove( void * dest, const void * src, size_t size )
 	}			
 
 	return (dest);
-}
-#include <string.h>
-#include <stdio.h>
-
-int main(void) {
-	char a[]="ABCDEFGH";
-
-  	char b[]="ABCDEFGH";
-
-    	ft_memmove(a+3,a,5);
-      	puts(a);
-
-        memmove(b+3,b,5);
-	puts(b);
-
-    return (0);
-
-
 }
