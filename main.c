@@ -135,7 +135,8 @@ int main (void)
         printf("%s\n", "***********");
         printf("%s\n", "*ft_memcpy*");
         printf("%s\n", "***********");
-	int array1 [] = { 57, 85, 29, 63, 21 };
+		int array1 [] = { 57, 85, 29, 63, 21 };
+		//int * array1 = NULL;
     	int * copy = NULL;
     	int * copy1 = NULL;
     	/*int*/ length = sizeof( int ) * 5;
@@ -201,14 +202,14 @@ int main (void)
    	char *ptr1;
    
         // Retourner un pointeur sur la première occurence
-   	ptr = strchr("Apprendre à programmer en C/C++1", 'C');
-   	ptr1 = ft_strchr("Apprendre à programmer en C/C++2", 'C');
+   		ptr = strchr("Apprendre à programmer en C/C++1", 'C');
+   		ptr1 = ft_strchr("Apprendre à programmer en C/C++2", 'C');
 	
         //Afficher la chaîne à partir de premier char trouvé
-	printf("%s\n",ptr);
-   	printf("%s\n",ptr1);
+		printf("%s\n",ptr);
+   		printf("%s\n",ptr1);
 
-	//ft_strrchr.c
+		//ft_strrchr.c
         printf("%s\n", "************");
         printf("%s\n", "*ft_strrchr*");
         printf("%s\n", "************");
@@ -220,6 +221,21 @@ int main (void)
         //Afficher la chaîne à partir de premier char trové
         printf("%s\n",ptr);
         printf("%s\n",ptr1);
+		
+
+		//ft_strncmp.c
+        printf("%s\n", "************");
+        printf("%s\n", "*ft_strncmp*");
+        printf("%s\n", "************");
+
+		char *str = "tralalalala";
+
+   		printf("%d : %d\n", strncmp("abcdef", "ABCDEF", 20), ft_strncmp("abcdef", "ABCDEF", 20));
+		printf("%d : %d\n", strncmp("Hello", "HEllo", 0), ft_strncmp("Hello", "HEllo", 0));
+		printf("%d : %d\n", strncmp("Hello", "HEllo", 6), ft_strncmp("Hello", "HEllo", 6));
+		printf("%d : %d\n", strncmp(str+3, str, 10), ft_strncmp(str+3, str, 10));
+		printf("%d : %d\n", strncmp("totototo", "toto", 10), ft_strncmp("totototo", "toto", 10));
+		printf("%d : %d\n", strncmp("vvv", "", 77), ft_strncmp("vvv", "", 77));
 
 
         return (0);

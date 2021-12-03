@@ -6,10 +6,15 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 16:15:53 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/11/29 17:25:45 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/03 19:40:43 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+
+/*The strcmp() function compares the two strings s1 and s2.*/ 
+/* It returns an integer less than, equal to, or greater than zero*/ 
+/* if s1 is found, respectively, to be less than, to match,*/ 
+/* or be greater than s2.*/
+#include "libft.h"
 int ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	size_t i;
@@ -19,21 +24,5 @@ int ft_strncmp(const char *str1, const char *str2, size_t n)
 	while (str1[i] == str2[i] && i < n && str1[i] != '\0' && str2[i] != '\0')
 	      i++;
 		
-	return (str1[i] - str2[i]);
-}
-#include <stdio.h>
-#include <string.h>
-
-int main () {
-	
-   	printf("%d : %d\n", strncmp("abcdef", "ABCDEF", 20), ft_strncmp("abcdef", "ABCDEF", 20));
-	printf("%d : %d\n", strncmp("Hello", "HEllo", 0), ft_strncmp("Hello", "HEllo", 0));
-	printf("%d : %d\n", strncmp("Hello", "HEllo", 6), ft_strncmp("Hello", "HEllo", 6));
-	printf("%d : %d\n", strncmp("tralala", "tralalalala", 10), ft_strncmp("tralala", "tralalalala", 10));
-	printf("%d : %d\n", strncmp("totototo", "toto", 10), ft_strncmp("totototo", "toto", 10));
-	printf("%d : %d\n", strncmp("vvv", "", 77), ft_strncmp("vvv", "", 77));
-
-
-   
-   return(0);
+	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
