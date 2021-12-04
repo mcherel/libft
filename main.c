@@ -237,6 +237,22 @@ int main (void)
 		printf("%d : %d\n", strncmp("totototo", "toto", 10), ft_strncmp("totototo", "toto", 10));
 		printf("%d : %d\n", strncmp("vvv", "", 77), ft_strncmp("vvv", "", 77));
 
+	
+	//ft_atoi.c
+        printf("%s\n", "************");
+        printf("%s\n", "*ft_atoi*");
+        printf("%s\n", "************");
+	
+	printf("%d\n", ft_atoi("  	-78atata"));
+	printf("%d\n", atoi("        -78atata"));
+	printf("%d\n", ft_atoi("      "));
+        printf("%d\n", atoi("       "));
+	//printf("%d\n", ft_atoi(NULL));
+       	//printf("%d\n", atoi(NULL));
+	printf("%d\n", ft_atoi(""));
+        printf("%d\n", atoi(""));
+	printf("%d\n", ft_atoi("       +78atata"));
+        printf("%d\n", atoi("       +78atata"));
 
         return (0);
 }
