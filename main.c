@@ -169,6 +169,33 @@ int main (void)
 
         memmove(b+3,b,5);
         puts(b);
+		
+		//ft_strlcpy.c
+		printf("%s\n", "************");
+        printf("%s\n", "*ft_strlcy*");
+        printf("%s\n", "************");
+		
+		//ft_strlcat.c
+		printf("%s\n", "************");
+        printf("%s\n", "*ft_strlcat*");
+        printf("%s\n", "************");
+
+		char s1a[10] = "Test1";
+		char s2a[] = "OK";
+		char s1b[10] = "Test1";
+		char s2b[] = "OK";
+		char s3a[10] = "";
+		char s4a[] = "";
+		char s3b[10] = "";
+		char s4b[] = "";
+		char s5a[20] = "Shorter";
+		char s6a[] = "ThanMyself";
+		char s5b[20] = "Shorter";
+		char s6b[] = "ThanMyself";
+		
+	printf("%d:%d\n", ft_strlcat(s1a, s2a, 0), strlcat(s1b, s2b, 0));
+	printf("%d:%d\n", ft_strlcat(s3a, s4a, 10), strlcat(s3b, s4b, 10));
+	printf("%d:%d\n", ft_strlcat(s5a, s6a, 10), strlcat(s5b, s6b, 10));
 
 	//ft_toupper.c
         printf("%s\n", "************");
