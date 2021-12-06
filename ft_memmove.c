@@ -6,15 +6,20 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 14:16:11 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/02 17:46:49 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/06 16:09:57 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/* copies size characters from src to dest, but for overlapping memory blocks, 
+ * memmove() is a safer approach than memcpy() */
+
 #include "libft.h"
 
 void * ft_memmove( void * dest, const void * src, size_t size )
 {
 	size_t i;
 
+	if (!dest && !src)
+		return (NULL);
 	if(dest > src)//si dest depasse la src on copie par la fin
 	{
 		i = size;
