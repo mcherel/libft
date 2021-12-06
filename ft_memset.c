@@ -6,9 +6,12 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/27 18:35:09 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/02 17:24:06 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/06 12:43:08 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* memset - fill memory with a constant byte */
+
 #include "libft.h"
 
 void * ft_memset( void * pointer, int value, size_t count )
@@ -20,5 +23,5 @@ void * ft_memset( void * pointer, int value, size_t count )
 		*((char *)pointer + i) = value;//* pour dereferencer et cast 
 		i++;
 	}
-	return (0);
+	return (pointer);
 }

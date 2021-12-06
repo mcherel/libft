@@ -6,17 +6,22 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 13:05:41 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/11/30 13:16:50 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/06 13:39:30 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"//inclure ficher .h et bzero
+/* allocates memory for an array of elementCount elements of size elementSize each 
+ 	and returns a pointer to the allocated memory. The memory is set to zero.*/
+#include "libft.h"
 
 
-void * calloc( size_t elementCount, size_t elementSize )
+void * ft_calloc( size_t elementCount, size_t elementSize )
 {
 	void *tab;
 
-	tab = malloc(sizeof(elementSize) * elementCount);
+	tab = malloc(elementSize * elementCount);
+	if (tab == NULL)
+		return (tab);
+	ft_bzero(tab, elementSize * elementCount);
 
 	return (tab);
 }
