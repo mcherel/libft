@@ -266,18 +266,17 @@ int main (void)
 
 	
 	//ft_atoi.c
-        printf("%s\n", "************");
+        printf("%s\n", "*********");
         printf("%s\n", "*ft_atoi*");
-        printf("%s\n", "************");
-	
-	printf("%d\n", ft_atoi("  	-78atata"));
-	printf("%d\n", atoi("        -78atata"));
-	printf("%d\n", ft_atoi("      "));
-        printf("%d\n", atoi("       "));
+        printf("%s\n", "*********");
+	printf("%d\n", ft_atoi("-7"));
+	printf("%d\n", atoi("-7"));
+	printf("%d\n", ft_atoi("99999999999"));
+        printf("%d\n", atoi("9999999999"));
 	//printf("%d\n", ft_atoi(NULL));
        	//printf("%d\n", atoi(NULL));
-	printf("%d\n", ft_atoi(""));
-        printf("%d\n", atoi(""));
+	printf("%d\n", ft_atoi("\e06050"));
+        printf("%d\n", atoi("\e06050"));
 	printf("%d\n", ft_atoi("       +78atata"));
         printf("%d\n", atoi("       +78atata"));
 

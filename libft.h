@@ -6,24 +6,32 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 16:45:15 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/02 17:10:06 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/09 12:57:14 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-# define LIBFT_H
+#define LIBFT_H
 
 # include <string.h>
-# include <stdlib.h>
-# include <unistd.h>
+#include <stdlib.h>
+#include <unistd.h>
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 5000
-# endif
+#ifndef BUFFER_SIZE
+#define BUFFER_SIZE 5000
+#endif
 
-# ifndef OPEN_MAX
-#  define OPEN_MAX 32
-# endif
+#ifndef OPEN_MAX
+#define OPEN_MAX 32
+#endif
+
+#ifndef INT_MAXI
+#define INT_MAXI 2147483647
+#endif
+
+#ifndef INT_MINI
+#define INT_MINI -2147483648
+#endif
 
 typedef struct		s_list
 {
