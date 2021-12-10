@@ -227,11 +227,12 @@ int main (void)
 		
 	char *ptr;
    	char *ptr1;
-   
+  
+  // void *memchr(const void *s, int c, size_t n)									
         // Retourner un pointeur sur la première occurence
    		ptr = strchr("Apprendre à programmer en C/C++1", 'C');
    		ptr1 = ft_strchr("Apprendre à programmer en C/C++2", 'C');
-	
+// *memchr(const void *s, int c, size_t n)		
         //Afficher la chaîne à partir de premier char trouvé
 		printf("%s\n",ptr);
    		printf("%s\n",ptr1);
