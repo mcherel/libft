@@ -6,7 +6,7 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/04 16:40:51 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/09 14:04:38 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/15 15:29:44 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
   pointée par nptr en entier de type int */
 #include "libft.h"
 int ft_isspace(char c);
-
-#include <stdio.h>
 int ft_atoi(const char *nptr)
 {
 	int i;
