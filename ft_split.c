@@ -1,37 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/14 14:46:45 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/15 11:24:47 by mcherel-         ###   ########.fr       */
+/*   Created: 2021/12/12 15:18:21 by mcherel-          #+#    #+#             */
+/*   Updated: 2021/12/15 10:50:46 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-void ft_putnbr_fd(int n, int fd)
+char **ft_split(char const *s, char c)
 {
-	unsigned int nb;
-	char s[10];
-	int i;
+	char **tab;
+	int n;
 
-	if (n == 0)
-		ft_putchar_fd('0', fd);
-	if (n < 0)
-	{
-		nb = (unsigned int) n * -1;
-		ft_putchar_fd('-', fd);
-	}
-	else
-		nb = (unsigned int) n;	
-	i = 0;
-	while (nb > 0)
+	if (!s)
+		return (NULL);
+	n = 0;
+	while (*s && *s++ == c)
 	{	
-		s[i] = (nb % 10) + '0';
-		nb = nb / 10;
-		i++;	
-	}	
-	while (--i >= 0)
-		ft_putchar_fd(s[i], fd);
+		if (!(n != 0 && *s != s[n-1]))
+			n++;
+	}
+	tab = (char **)ft_calloc(n + 1, sizeof(char*));
+	while (*s++ && n-- > 0)
+	{  
+		*tab++ = ft_strchr(s++, c);//pas bon
+	}
+	return (tab);
 }
