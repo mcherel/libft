@@ -6,14 +6,14 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/11 19:26:03 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 13:30:32 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/19 14:12:41 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char					*new;
+	char			*new;
 	unsigned int	l1;
 	unsigned int	l2;
 

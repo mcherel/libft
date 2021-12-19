@@ -6,7 +6,7 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 11:51:26 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 12:51:43 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/19 14:07:49 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -17,8 +17,8 @@ static char	*ft_getstr(char *str, unsigned int nb, int len);
 char	*ft_itoa(int n)
 {
 	unsigned int	nb;
-	char				*result;
-	int					len;
+	char			*result;
+	int				len;
 
 	if (n > INT_MAXI || n < (int)INT_MINI)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/04 16:40:51 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 12:09:20 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/19 14:06:50 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int	ft_isspace(char c);
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	sign;
+	int		i;
+	int		sign;
 	long	nbr;
 
 	i = 0;

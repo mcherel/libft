@@ -6,14 +6,14 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 13:01:27 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 13:35:55 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/19 14:19:16 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char				*newstr;
+	char			*newstr;
 	unsigned int	i;
 
 	if (!s || !f)

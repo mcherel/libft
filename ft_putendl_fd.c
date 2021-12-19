@@ -6,15 +6,15 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 13:58:56 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 13:10:04 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/19 14:09:25 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if(!s)
-		return ;	
+	if (!s)
+		return ;
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }

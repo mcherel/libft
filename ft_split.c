@@ -6,18 +6,18 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:18:21 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 13:24:09 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/19 14:14:50 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 static unsigned int	ft_nb_unit(char const *s, char c);
-static char				**ft_strndup(char **tab, char const *s, char c, int n);
-char							**ft_clear(char **tab);
+static char			**ft_strndup(char **tab, char const *s, char c, int n);
+char				**ft_clear(char **tab);
 
 char	**ft_split(char const *s, char c)
 {
-	char				**tab;
+	char			**tab;
 	unsigned int	n;
 	unsigned int	tab_len;
 
