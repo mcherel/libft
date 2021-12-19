@@ -6,27 +6,88 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:18:21 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/15 10:50:46 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/19 13:24:09 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-char **ft_split(char const *s, char c)
+
+static unsigned int	ft_nb_unit(char const *s, char c);
+static char				**ft_strndup(char **tab, char const *s, char c, int n);
+char							**ft_clear(char **tab);
+
+char	**ft_split(char const *s, char c)
 {
-	char **tab;
-	int n;
+	char				**tab;
+	unsigned int	n;
+	unsigned int	tab_len;
 
 	if (!s)
 		return (NULL);
+	tab_len = ft_nb_unit(s, c);
+	tab = ft_calloc((tab_len + 1), sizeof(char *));
+	if (!tab)
+		return (NULL);
 	n = 0;
-	while (*s && *s++ == c)
-	{	
-		if (!(n != 0 && *s != s[n-1]))
-			n++;
+	tab = ft_strndup(tab, s, c, tab_len);
+	return (tab);
+}
+
+static unsigned int	ft_nb_unit(char const *s, char c)
+{
+	unsigned int	unit;
+	unsigned int	i;
+
+	i = 0;
+	unit = 0;
+	while (s[i])
+	{
+		if (s[i] != c && i == 0)
+			unit++;
+		if (i > 0 && s[i - 1] == c && s[i] != c)
+			unit++;
+		i++;
 	}
-	tab = (char **)ft_calloc(n + 1, sizeof(char*));
-	while (*s++ && n-- > 0)
-	{  
-		*tab++ = ft_strchr(s++, c);//pas bon
+	return (unit);
+}
+
+static char	**ft_strndup(char **tab, char const *s, char c, int n)
+{
+	int	i;
+	int	start;
+	int	count;
+
+	i = 0;
+	start = 0;
+	count = 0;
+	while (s[start] && i < n)
+	{
+		while (s[start] == c)
+			start++;
+		while (s[start] != c && s[start])
+		{
+			start++;
+			count++;
+		}
+		tab[i] = malloc(sizeof(char) * count + 1);
+		if (!tab)
+			return (ft_clear(tab));
+		ft_strlcpy(tab[i], &s[start - count], count + 1);
+		count = 0;
+		i++;
 	}
 	return (tab);
+}
+
+char	**ft_clear(char **tab)
+{
+	unsigned int	i;
+
+	i = 0;
+	while (tab[i])
+	{
+		free(tab[i]);
+		i++;
+	}
+	free(tab);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 16:45:15 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/11 19:47:28 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/17 11:38:09 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,14 @@
 
 #ifndef INT_MINI
 #define INT_MINI -2147483648
+#endif
+
+#ifndef YES
+#define YES 1
+#endif
+
+#ifndef NO
+#define NO 0
 #endif
 
 typedef struct		s_list

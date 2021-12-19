@@ -6,7 +6,7 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/27 18:35:09 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/06 12:43:08 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/19 13:08:32 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 
 #include "libft.h"
 
-void * ft_memset( void * pointer, int value, size_t count )
+void	*ft_memset(void *pointer, int value, size_t count)
 {
-	size_t i = 0;
+	size_t	i;
 
-	while ( i < count)
+	i = 0;
+	while (i < count)
 	{
-		*((char *)pointer + i) = value;//* pour dereferencer et cast 
+		*((char *)pointer + i) = value;
 		i++;
 	}
 	return (pointer);

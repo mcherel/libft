@@ -6,15 +6,16 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 14:46:45 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/15 11:24:47 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/19 13:12:38 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-void ft_putnbr_fd(int n, int fd)
+
+void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned int nb;
-	char s[10];
-	int i;
+	unsigned int	nb;
+	char					s[10];
+	int						i;
 
 	if (n == 0)
 		ft_putchar_fd('0', fd);
@@ -24,14 +25,14 @@ void ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd('-', fd);
 	}
 	else
-		nb = (unsigned int) n;	
+		nb = (unsigned int) n;
 	i = 0;
 	while (nb > 0)
-	{	
+	{
 		s[i] = (nb % 10) + '0';
 		nb = nb / 10;
-		i++;	
-	}	
+		i++;
+	}
 	while (--i >= 0)
 		ft_putchar_fd(s[i], fd);
 }
