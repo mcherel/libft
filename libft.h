@@ -6,7 +6,7 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 16:45:15 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/11 19:47:28 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/20 08:52:10 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strnstr(const char *big,
 	const char *little, size_t len);
-int					ft_strcmp(const char *s1, const char *s2);
+//int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_atoi(const char *str);
 int					ft_isalpha(int c);
@@ -85,14 +85,18 @@ t_list				*ft_lstlast(t_list *lst);
 void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
 void				ft_lstclear(t_list **lst, void (*del)(void *));
-void				ft_lstityer(t_list *lst, void (*f)(void *));
-t_list				*ft_lstmaip(t_list *lst,
-	void *(*f)(void *), void (*del)(void *));
+void				ft_lstiter(t_list *lst, void (*f)(void *));
+t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
+	void (*del)(void *));
+//void				ft_lstclear(t_list **lst, void (*del)(void *));
+//void				ft_lstityer(t_list *lst, void (*f)(void *));
+//t_list				*ft_lstmaip(t_list *lst,
+//	void *(*f)(void *), void (*del)(void *));
 
-char				*ft_strtok(char *str, char sepa);
-int					get_next_line(int fd, char **line);
-int					is_newline(char *backup);
-int					split_line(char **backup, char **line, int cut_idx);
-int					return_all(char **backup, char **line, int read_size);
+//char				*ft_strtok(char *str, char sepa);
+//int					get_next_line(int fd, char **line);
+//int					is_newline(char *backup);
+//int					split_line(char **backup, char **line, int cut_idx);
+//int					return_all(char **backup, char **line, int read_size);
 
 #endif
