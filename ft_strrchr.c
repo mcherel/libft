@@ -6,7 +6,7 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 14:46:16 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 13:42:20 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/22 15:32:42 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* return a pointer to the byte or 
@@ -15,16 +15,15 @@
 
 char	*ft_strrchr( const char *string, int searchedChar )
 {
-	char	*last;
+	int i;
 
-	last = NULL;
-	while (*string != '\0')
+	i = ft_strlen(string);
+	
+	while (i >= 0)
 	{
-		if (*string == searchedChar)
-			last = ((char *)string);
-		string++;
+		if (string[i] == (char)searchedChar)
+			return ((char *)&string[i]);
+		i--;
 	}
-	if (searchedChar == '\0')
-		return ((char *)string);
-	return (last);
+	return (NULL);
 }

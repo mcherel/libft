@@ -6,7 +6,7 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 16:45:12 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 13:39:33 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/22 16:25:57 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*locates the	first occurrence of the	null-terminated string little in the	
@@ -22,7 +22,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	j = 0;
 	if (little[j] == '\0')
 		return ((char *)big);
-	while (big[i] != '\0' && len > i)
+	while (big[i] != '\0' && len > i + j)
 	{
 		if (big[i] == little[j])
 			j++;
