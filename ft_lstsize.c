@@ -6,16 +6,18 @@
 /*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 12:11:39 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/20 12:19:26 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/26 09:56:26 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_lstsize(t_list *lst)
+
+int	ft_lstsize(t_list *lst)
 {
 	int	i;
+
 	i = 0;
-	while(lst != NULL)
+	while (lst != NULL)
 	{
 		++i;
 		lst = lst->next;

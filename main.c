@@ -1,4 +1,3 @@
-
 //#include "../ft_tests.h"
 #include "libft.h"
 #include <stdio.h>
@@ -265,7 +264,20 @@ int main (void)
 		printf("%d : %d\n", strncmp("totototo", "toto", 10), ft_strncmp("totototo", "toto", 10));
 		printf("%d : %d\n", strncmp("vvv", "", 77), ft_strncmp("vvv", "", 77));
 
-	
+
+		//ft_strncmp.c
+		printf("%s\n", "*********");
+        printf("%s\n", "*ft_strnstr*");
+        printf("%s\n", "*********");		
+		char haystack[30] = "aaabcabcd";
+		char needle[10] = "aabc";
+		printf("ft_strnstr : %s\n", ft_strnstr(haystack, needle, -4));
+		printf("   strnstr : %s\n", strnstr(haystack, needle, -4));
+		printf("ft_strnstr : %s\n", ft_strnstr(haystack, "c", -1));
+		printf("   strnstr : %s\n", strnstr(haystack, "c", -1));
+
+
+
 	//ft_atoi.c
         printf("%s\n", "*********");
         printf("%s\n", "*ft_atoi*");
