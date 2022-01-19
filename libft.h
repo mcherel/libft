@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mcherel- <mcherel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 16:45:15 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/26 10:38:26 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/27 13:16:51 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef LIBFT_H
+
 # define LIBFT_H
 
 # include <string.h>

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mcherel- <mcherel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/04 16:40:51 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 14:06:50 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/27 13:27:23 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
   pointée par nptr en entier de type int */
 #include "libft.h"
 
-int	ft_isspace(char c);
+static int	ft_isspace(char c);
 
 int	ft_atoi(const char *nptr)
 {
@@ -45,7 +45,7 @@ int	ft_atoi(const char *nptr)
 	return (sign * nbr);
 }
 
-int	ft_isspace(char c)
+static int	ft_isspace(char c)
 {
 	if ((c == ' ')
 		|| (c == '\t')

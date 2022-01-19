@@ -3,16 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mcherel- <mcherel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 16:15:53 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 13:38:25 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/27 13:26:14 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*The strcmp() function compares the two strings s1 and s2.*/
-/* It returns an integer less than, equal to, or greater than zero*/
-/* if s1 is found, respectively, to be less than, to match,*/
-/* or be greater than s2.*/
+
 #include "libft.h"
 
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
@@ -27,3 +24,7 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 		i++;
 	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
+/*The strcmp() function compares the two strings s1 and s2.*/
+/* It returns an integer less than, equal to, or greater than zero*/
+/* if s1 is found, respectively, to be less than, to match,*/
+/* or be greater than s2.*/

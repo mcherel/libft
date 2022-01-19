@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcherel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mcherel- <mcherel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:18:21 by mcherel-          #+#    #+#             */
-/*   Updated: 2021/12/19 14:14:50 by mcherel-         ###   ########.fr       */
+/*   Updated: 2021/12/27 13:16:17 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
 
 static unsigned int	ft_nb_unit(char const *s, char c);
 static char			**ft_strndup(char **tab, char const *s, char c, int n);
-char				**ft_clear(char **tab);
+static char				**ft_clear(char **tab);
 
 char	**ft_split(char const *s, char c)
 {
@@ -78,7 +78,7 @@ static char	**ft_strndup(char **tab, char const *s, char c, int n)
 	return (tab);
 }
 
-char	**ft_clear(char **tab)
+static char	**ft_clear(char **tab)
 {
 	unsigned int	i;
 
