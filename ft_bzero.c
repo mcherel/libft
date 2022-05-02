@@ -6,7 +6,7 @@
 /*   By: mcherel- <mcherel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 10:26:42 by mcherel-          #+#    #+#             */
-/*   Updated: 2022/05/02 17:25:46 by mcherel-         ###   ########.fr       */
+/*   Updated: 2022/05/02 19:04:15 by mcherel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,4 @@ void	ft_bzero(void *s, size_t n)
 		*((char *)s + i) = '\0';
 		i++;
 	}
-	/*unsigned char	*p;
-
-	p = (unsigned char *)s;
-	while (n--)
-		*p++ = '\0';*/
 }
